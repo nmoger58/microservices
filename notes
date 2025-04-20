@@ -1,0 +1,61 @@
+# Identity Service
+usually it is used to handle the authentication related things
+
+# handle the user sign in and sign out
+# handle the user sign up and sign out
+
+# store the user information in the database
+# handle the user information in the database
+
+this is a standalone service that will be used by other services
+this service will be used by the other services to authenticate the user 
+
+# pre('save')	Hashes the password before saving to DB
+# .comparePassword()	Compares a login password with the stored hash
+# .index({ username: 'text' })	Enables search via text on username field
+
+
+# winston logger
+# winston is a logging library for Node.js
+# 🚀 What is this code for?
+It creates a logging system that:
+
+Logs messages with timestamps.
+
+Supports different log levels (like error, info, debug).
+
+Writes logs to files and also shows them in the console.
+
+Is environment-aware (different behavior in development vs production).
+
+Logging like this is essential for:
+
+Debugging during development.
+
+Monitoring and error tracking in production.
+
+Writing logs to files so you can audit or inspect later.
+
+## helmet
+# for security headers 
+# helmet is a middleware that helps you secure your Express apps by setting various HTTP headers. It helps protect your app from well-known web vulnerabilities by setting HTTP headers appropriately.
+# It’s not a silver bullet, but it can help you improve your app’s security.
+# It’s a collection of 14 smaller middleware functions that set security-related HTTP headers. You can use them individually or as a group.
+
+# ratelimiterflexible
+# for rate limiting
+# Rate limiting is a technique used to control the amount of incoming and outgoing traffic to or from a network. It helps prevent abuse and ensures fair usage of resources.
+# In the context of web applications, rate limiting can be used to restrict the number of requests a user can make to an API or service within a certain time frame. This helps protect against DDoS attacks, brute force attacks, and other malicious activities.
+# The `rate-limiter-flexible` library is a flexible and powerful rate limiting library for Node.js. It allows you to set up rate limits based on various criteria, such as IP address, user ID, or any other identifier. It supports different storage backends like Redis, MongoDB, and in-memory storage.
+# It provides features like:
+# - Flexible rate limiting strategies (e.g., sliding window, token bucket).
+# - Support for multiple storage backends (Redis, MongoDB, etc.).
+# - Customizable error messages and response formats.
+# - Support for different rate limiters (e.g., per user, per IP, etc.).
+# - Built-in support for Redis clusters and sharding.
+# - Support for burst limits (allowing a burst of requests followed by a slower rate).
+# - Support for different time windows (e.g., per second, per minute, per hour, etc.).
+# - Support for different rate limiters (e.g., per user, per IP, etc.).
+# - Built-in support for Redis clusters and sharding.
+# - Support for different time windows (e.g., per second, per minute, per hour, etc.).
+# - Support for different rate limiters (e.g., per user, per IP, etc.).
