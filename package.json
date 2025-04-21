@@ -24,6 +24,7 @@
     "mongoose": "^8.13.2",
     "rate-limit-redis": "^4.2.0",
     "rate-limiter-flexible": "^7.0.0",
+    "redis": "^4.7.0",
     "winston": "^3.17.0"
   }
 }

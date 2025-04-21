@@ -59,3 +59,10 @@ Writing logs to files so you can audit or inspect later.
 # - Built-in support for Redis clusters and sharding.
 # - Support for different time windows (e.g., per second, per minute, per hour, etc.).
 # - Support for different rate limiters (e.g., per user, per IP, etc.).
+
+
+# express-rate-limit
+# for rate limiting
+# Express-rate-limit is a middleware for Express.js that helps you limit repeated requests to your API. It’s a simple way to prevent abuse and protect your server from being overwhelmed by too many requests from a single client.
+# It works by keeping track of the number of requests made by a client (usually identified by their IP address) within a specified time window. If the client exceeds the allowed number of requests, they receive a response indicating that they have been rate-limited.
+# This is useful for preventing brute-force attacks, DDoS attacks, and other forms of abuse where a single client tries to overwhelm your server with too many requests.

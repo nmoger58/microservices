@@ -10,7 +10,7 @@ const generateTokens=async(user)=>{
 
     const refreshToken=crypto.randomBytes(40).toString('hex');
     const expiresAt=new Date()
-    expiresAt.setDate(expiresAt.getDate()+7) // refresh token expires in 7 days
+    expiresAt.setDate(expiresAt.getDate()+1) // refresh token expires in 1 day
     await refreshTokenModel.create({
         token : refreshToken,
         userId : user._id,
